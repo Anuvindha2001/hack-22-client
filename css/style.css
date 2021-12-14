@@ -6,6 +6,7 @@ body {
     background: #061f4a;
     color: white;
 }
+
 h1,
 h2,
 h3,
@@ -289,7 +290,7 @@ div#swal2-content ol li {
         margin: 0px -15px;
         max-height: 0;
         overflow-y: scroll;
-        background-color: rgb(86, 19, 196);
+        /* background-color: rgb(86, 19, 196); */
         transition: 0.3s all;
     }
     .main-nav.open {
@@ -575,23 +576,20 @@ select:focus {
     color: #8b3af5;
 }
 
-.hackathon__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 #g1 svg {
     margin-left: -20rem;
     background: rgba(227, 0, 171, 0.7);
     filter: blur(200px);
 }
 .gradient svg {
-    margin-left: 65%;
     background: rgba(227, 0, 171, 0.7);
     filter: blur(200px);
 }
-@media (min-width: 800px) {
+
+@media (min-width: 1008px) {
+    .gradient svg {
+        margin-left: 65%;
+    }
     #faq {
         margin-top: -50rem;
     }
@@ -601,15 +599,17 @@ select:focus {
         min-height: 608px;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 1008px) {
     #faq {
-        margin-top: 340rem;
+        width: 94%;
+        margin-top: -60rem;
+        margin-left: 7%;
     }
 }
 
 @media (max-width: 400px) {
     #faq {
-        margin-top: 500rem;
+        margin-top: -60rem;
     }
 }
 #faq {
@@ -987,6 +987,9 @@ div.home-content {
 .tracks p {
     margin-top: 20px;
 }
+.codeofconduct a {
+    margin-left: 45%;
+}
 .testimonials .container {
     width: 80%;
     display: flex;
@@ -1004,13 +1007,17 @@ div.home-content {
 {
     margin: 1rem;
 } */
+@media (max-width: 768px) {
+    #become-sponsor .dotted-line {
+        margin-left: -700px !important;
+    }
+}
 #become-sponsor .dotted-line {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 1500px !important;
     padding: 0;
-    /* margin-left: -180px !important; */
     z-index: -55;
     max-height: 800px !important;
 }
@@ -1441,4 +1448,11 @@ video {
         margin: 0 auto;
         padding: 5%;
     }
+}
+
+.hackathon__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
