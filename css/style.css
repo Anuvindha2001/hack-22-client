@@ -574,100 +574,6 @@ select:focus {
 .schedule_sec .time {
     color: #8b3af5;
 }
-.vid {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    /* background-color: rgb(51, 51, 51); */
-    background: transparent;
-    overflow: hidden;
-}
-
-.play-button {
-    width: 152px;
-    height: 152px;
-    position: relative;
-    cursor: pointer;
-}
-
-.play-backdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: #000;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.play-close {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    bottom: calc(100% + 15px);
-    border: none;
-    outline: none;
-    background: none;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.play-close::before,
-.play-close::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: rotate(45deg);
-    background-color: #fff;
-}
-
-.play-close::after {
-    transform: rotate(-45deg);
-}
-
-.play-circles {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.play-perspective {
-    /* width: 95%;
-    height: 100%; */
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    left: -230px;
-    top: -125px;
-}
-video {
-    background: black;
-}
-.play-triangle {
-    /* width: 100%;
-    height: 100%; */
-    width: 152px;
-    height: 100%;
-    position: absolute;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 578px) {
-    .vid {
-        width: 90%;
-        margin: 0 auto;
-        padding: 5%;
-    }
-}
 
 .hackathon__details {
     display: flex;
@@ -1441,4 +1347,98 @@ div.home-content {
     background-color: white;
     border: 2px solid #7289da;
     color: #fff;
+}
+.vid {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* background-color: rgb(51, 51, 51); */
+    background: transparent;
+    overflow: hidden;
+}
+
+.play-button {
+    width: 152px;
+    height: 152px;
+    position: relative;
+    cursor: pointer;
+}
+
+.play-backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.play-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 15px);
+    border: none;
+    outline: none;
+    background: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.play-close::before,
+.play-close::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.play-close::after {
+    transform: rotate(-45deg);
+}
+
+.play-circles {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.play-perspective {
+    /* width: 95%;
+    height: 100%; */
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: -230px;
+    top: -125px;
+}
+video {
+    background: black;
+}
+.play-triangle {
+    /* width: 100%;
+    height: 100%; */
+    width: 152px;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 578px) {
+    .vid {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5%;
+    }
 }
