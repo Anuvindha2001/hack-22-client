@@ -567,7 +567,7 @@ select:focus {
 }
 
 .tab-2 div div {
-    box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.1);
+    border-bottom:1px solid #fff;
 }
 .schedule_sec .time2 {
     color: #8b3af5;
@@ -1455,4 +1455,11 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.schedule_sec h3{
+    font-size: 4rem;
+}
+
+.schedule_sec .h1{
+    font-size: 2.5rem;
 }
